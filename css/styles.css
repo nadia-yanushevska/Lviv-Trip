@@ -3,6 +3,46 @@ body {
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
 	color: #333;
+	min-width: 1400px;
+	overflow-x: auto;
+	margin-bottom: 80px;
+}
+
+/* Image styles */
+.img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Image download links */
+.img-download {
+	display: block;
+	position: relative;
+    top: 6px;
+	transition: opacity 0.3s;
+}
+
+.img-download:hover {
+	opacity: 0.8;
+}
+
+.img-download::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	background: rgba(255,255,255,0.9) url('data:image/png;base64,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') no-repeat center;
+	background-size: 36px 36px;
+	border-radius: 4px;
+	opacity: 0;
+	transition: opacity 0.3s;
+	pointer-events: none;
+}
+
+.img-download:hover::after {
+	opacity: 1;
 }
 
 /* Table styles */
@@ -60,11 +100,82 @@ tr:has(td[colspan="6"]:only-child:empty) {
 	height: 28px;
 }
 
-footer {
-	margin-top: 2rem;
-	padding: 1rem;
-	background-color: #f4f4f4;
-	text-align: center;
+/* Sticky Footer styles */
+.sticky-footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0px 20px;
+	/* background-color: #f4f4f4; */
+	display: flex;
+	align-items: center;
+	gap: 0px;
+	/* box-shadow: 0 -2px 5px rgba(0,0,0,0.1); */
+}
+
+.footer-title {
+	font-weight: bold;
+	font-size: 16px;
+	background-color: #3f48cc;
+	color: white;
+	padding: 8px 16px;
+	margin: 0;
+    border-radius: 8px 0px 0px 8px ;
+}
+
+.footer-link {
+	font-weight: bold;
+	font-size: 16px;
+	background-color: white;
+	color: #000;
+	text-decoration: none;
+	padding: 8px 16px;
+	transition: background-color 0.3s;
+    border-radius: 0px 8px 8px 0px ;
+
+}
+
+.footer-link:hover {
+	background-color: rgb(222, 223, 243);
+}
+
+/* Add bottom margin to body to prevent content overlap */
+body {
+	margin-bottom: 80px;
 }
 
 /* Table styles */
+
+/* Section styles */
+.main-sec {
+	display: grid;
+	grid-template-columns: 1fr 0.9fr 0.6fr;
+	grid-template-rows: auto auto;
+	gap: 10px;
+	padding: 20px;
+	min-width: 1378px;
+	overflow-x: auto;
+}
+
+/* Grid positioning */
+table {
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.centre-img {
+	grid-row: 1;
+	grid-column: 2 / 4;
+	align-self: end;
+}
+
+.hor-img {
+	grid-row: 2;
+	grid-column: 1 / 3;
+}
+
+.ver-img {
+	grid-row: 2;
+	grid-column: 3;
+}
