@@ -48,21 +48,12 @@ table {
 }
 
 /* Link Reset - Links should be black like text */
-a {
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
 	color: #000;
 	text-decoration: none;
-}
-
-/* Custom Styles */
-body {
-	font-family: Arial, sans-serif;
-	line-height: 1.6;
-	color: #333;
-}
-
-footer {
-	margin-top: 2rem;
-	padding: 1rem;
-	background-color: #f4f4f4;
-	text-align: center;
 }

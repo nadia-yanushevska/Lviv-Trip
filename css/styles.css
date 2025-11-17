@@ -1,1 +1,70 @@
 /* Custom styles for Lviv Trip website */
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+}
+
+/* Table styles */
+table {
+	border-collapse: collapse;
+	width: auto;
+	font-size: 10px;
+}
+
+table, th, td {
+	border: 1px solid #ccc;
+}
+
+th, td {
+	padding: 8px;
+}
+
+.column-header {
+	font-weight: bold;
+	font-size: 12px;
+    vertical-align: middle;
+}
+
+.subheader {
+	font-weight: bold;
+	color: white;
+	font-size: 14px;
+	background-color: #3f48cc;
+}
+
+.subheader-black {
+	font-weight: bold;
+	color: white;
+	font-size: 14px;
+	background-color: black;
+}
+
+.centrelized-cell {
+	text-align: center;
+}
+
+/* First column width */
+table th:first-child,
+table td:first-child {
+	width: 32px;
+}
+
+/* Hide columns with non-displayed-cell class */
+.non-displayed-cell {
+	display: none;
+}
+
+/* Empty row height - match regular data rows */
+tr:has(td[colspan="6"]:only-child:empty) {
+	height: 28px;
+}
+
+footer {
+	margin-top: 2rem;
+	padding: 1rem;
+	background-color: #f4f4f4;
+	text-align: center;
+}
+
+/* Table styles */
