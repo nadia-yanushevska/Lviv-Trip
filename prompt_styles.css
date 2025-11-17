@@ -1,0 +1,61 @@
+/* Custom confirmation modal styles */
+#confirmModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#confirmMessage {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+#confirmYes {
+    background: #3f48cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+}
+
+#confirmNo {
+    background: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100px;
+}
+
+#confirmYes:hover {
+    background: #2e3799;
+}
+
+#confirmNo:hover {
+    background: #d0d0d0;
+}

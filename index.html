@@ -6,6 +6,7 @@
     <title>Lviv Trip</title>
     <link rel="stylesheet" href="css/reset_styles.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="prompt_styles.css">
 </head>
 <body>
     <header>
@@ -188,5 +189,16 @@
         <h1 class="footer-title">Львів мапи</h1>
         <a href="https://docs.google.com/spreadsheets/d/1v30fBHvGIXPMCdEF49FgHBauaXPIZmQHxLr8UYDU89s/edit?gid=0#gid=0" class="footer-link" target="_blank">Львів таблиця</a>
     </footer>
+
+    <!-- Custom confirmation modal -->
+    <div id="confirmModal">
+        <div class="modal-content">
+            <p id="confirmMessage"></p>
+            <button id="confirmYes">Так</button>
+            <button id="confirmNo">Скасувати</button>
+        </div>
+    </div>
+
+    <script src="confirmPrompt.js"></script>
 </body>
 </html>
