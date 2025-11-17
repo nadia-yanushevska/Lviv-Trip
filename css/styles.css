@@ -167,24 +167,33 @@ table tr:last-child td:last-child {
 .sticky-footer {
 	position: fixed;
 	bottom: 0;
-	left: 20px;
-	right: 20px;
-	width: auto;
-	max-width: calc(100vw - 40px);
-	padding: 0px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding: 0 20px;
 	display: flex;
 	align-items: center;
+	justify-content: flex-start;
 	gap: 0px;
 	z-index: 1000;
+	box-sizing: border-box;
 }
 
 /* Mobile responsive footer */
 @media (max-width: 768px) {
 	.sticky-footer {
-		left: 10px;
-		right: 10px;
-		max-width: calc(100vw - 20px);
+		padding: 0 10px;
 		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.footer-title,
+	.footer-link {
+		font-size: 14px;
+		padding: 6px 12px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }
 
