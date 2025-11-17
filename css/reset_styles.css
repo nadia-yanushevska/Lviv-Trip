@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+/* Link Reset - Links should be black like text */
+a {
+	color: #000;
+	text-decoration: none;
+}
+
 /* Custom Styles */
 body {
 	font-family: Arial, sans-serif;
