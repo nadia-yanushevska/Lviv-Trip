@@ -168,11 +168,24 @@ table tr:last-child td:last-child {
 	position: fixed;
 	bottom: 0;
 	left: 20px;
+	right: 20px;
 	width: auto;
+	max-width: calc(100vw - 40px);
 	padding: 0px;
 	display: flex;
 	align-items: center;
 	gap: 0px;
+	z-index: 1000;
+}
+
+/* Mobile responsive footer */
+@media (max-width: 768px) {
+	.sticky-footer {
+		left: 10px;
+		right: 10px;
+		max-width: calc(100vw - 20px);
+		flex-wrap: wrap;
+	}
 }
 
 .footer-title {
