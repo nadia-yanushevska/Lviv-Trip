@@ -182,19 +182,9 @@ table tr:last-child td:last-child {
 /* Mobile responsive footer */
 @media (max-width: 768px) {
 	.sticky-footer {
-		padding: 0 10px;
-		flex-wrap: wrap;
+		position: static;
 		justify-content: center;
-	}
-	
-	.footer-title,
-	.footer-link {
-		font-size: 14px;
-		padding: 6px 12px;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
+    }
 }
 
 .footer-title {
